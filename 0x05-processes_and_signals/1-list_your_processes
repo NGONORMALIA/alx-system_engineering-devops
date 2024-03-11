@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#to list al process and some specification
+ps -auxf

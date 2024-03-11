@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#print all proccess and bash word
+# shellcheck disable=SC2009
+ps -aux | grep bash

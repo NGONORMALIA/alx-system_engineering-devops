@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# fizz if divide by 3,buzz if 5, fizzbuzz if 3 and 5 otherwise the number
+for i in {1..100}
+do
+    n=$((i%3))
+    j=$((i%5))
+    if [ $n -eq 0 ] && [ $j -eq 0 ]
+    then
+        echo "FizzBuzz"
+    elif [ $n -eq 0 ]
+    then
+        echo "Fizz"
+    elif [ $j -eq 0 ]
+    then
+        echo "Buzz"
+    else
+        echo "$i"
+    fi
+done
