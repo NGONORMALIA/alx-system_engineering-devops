@@ -1,0 +1,8 @@
+#!/bin/env bash
+#ping an ip adress pass as argument
+if [ "$#" -ne 1 ];
+then
+	echo "Usage: $0 {IP_ADDRESS}"
+fi
+address="$1"
+ping -c 5 "$address"
